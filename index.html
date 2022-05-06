@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Hội thi SOI</title>
+  </head>
+  <body>
+    <header>
+        <div class="header__menu">
+          <img class="logo" src="" alt="LOGO" />
+          <div class="navv">
+            <ul class="nav__links">
+              <li><a href="#livestream">XEM LIVESTREAM</a></li>
+              <li><a href="#info">VỀ HỘI THẢO</a></li>
+              <li><a href="#">CUỘC THI</a></li>
+              <li><a href="#contact">LIÊN HỆ</a></li>
+              <li>
+                <a class="button" id="btnBuyTicket" href="#buyTicket">MUA VÉ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <section class="carousel"> 
+      <div class="carousel__content">
+        <div class="meeting">
+          <p>HỘI THẢO</p>
+        </div>
+        <p class="soi">
+          SOI
+          <span class="slogan">(Với Font và ảnh đẹp hơn) </span>
+        </p>
+      </div>
+      <div class="carousel__contact">
+        <span>Follow us</span>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="carousel__scrolldown">
+        <span>KÉO XUỐNG</span>
+        <i class="fa fa-arrow-down"></i>
+      </div>
+    </section>
+    <div class="content">
+      <section id="livestream" class="container">
+        <h3>Xem Livestream</h3>
+        <div class="row livestream__content">
+          <div class="col-xs-12 col-lg-6">
+            <div class="livestream__pic">
+              <img
+                class="img-fluid"
+                src="./Images/xem-livestream.png"
+                alt="LIVESTREAM"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-6">
+            <form class="inputCode">
+              <p>Nhập mã code xuống bên dưới mới được xem :></p>
+              <input
+                type="text"
+                name="livestream_code"
+                id="livestream_code"
+                class="livestream__inputCode"
+                placeholder="CODE"
+              />
+              <br />
+              <button class="btn btn-primary btn__active">Kích hoạt</button>
+            </form>
+          </div>
+        </div>
+        <hr class="line" />
+      </section>
+
+      <section id="buyTicket" class="container">
+        <h3>Đặt mua vé</h3>
+          <form>
+            <div class="row">
+              <div class="col-xs-12 col-lg-6 text-center">
+                  <div class="buyTicket__left ">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Họ tên" />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    name="phoneCall"
+                    placeholder="Số điện thoại"
+                  />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="school" placeholder="Trường" />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="id" placeholder="MSSV" />
+                </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-6 buyTicket__right">
+                <select class=" buyTicket__select">
+                    <option value="" disabled selected hidden>LOẠI VÉ</option>
+                    <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                  </select>
+                  <div class="ticketInfor">
+                    <h4>Hạng vé</h4>
+                    <h1>Giá</h1>
+                    <p>Quyền lợi 1</p>
+                    <p>Quyền lợi 2</p>
+                    <p>Quyền lợi 3</p>
+                    <button type="submit" class="btn btn-primary btnSignup">Đăng ký</button>
+              </div>
+            </div>
+          </form>
+          <hr class="line" />
+      </section>
+      <section id="info" class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-5">
+            <div class="info_pic text-right">
+              <img
+                class="img-fluid"
+                src="./Images/info.png"
+                alt="info-pic"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-7">
+            <div class="meetingSoi">
+                <p>HỘI THẢO SOI</p>
+            </div>
+            <div class="info-detail">
+            <h1>Câu hỏi khơi mào vấn đề ?</h1>
+            <p>
+                Văn bản giới thiệu về sứ mệnh hay chi chi đó về hội thảo, nói chung
+                dài dài một tí :v chi tiết kiểu bla bla để trả lời cho các vấn đề phát
+                sinh ở trên còn ở bên trái là poster của hội thảo này
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="line" />
+      </section>
+      <footer class="container">
+          <div class="row">
+              <div class="col-md-4">
+              <p>SOI</p>
+            </div>
+            <div class="col-md-6">
+              <span>Sẵn sàng để khám phá?</span>
+              <button class="btn btn-primary btn__active">Mua vé ngay</button>
+            </div>
+            <div class="col-md-2 footerIcon lastComponent">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-facebook-f"></i>
+          </div>
+          </div>
+          <hr class="footer-line">
+        <div id="contact" class="row">
+            <div class="col-md-4 col-xs-12">
+          <span>Liên hệ để được tư vấn:</span>
+          <i class="icomoon icon-phone"></i>
+          <span> 0123.458.456(A.Phi)</span>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <span>Mong muốn cộng tác?</span>
+          <i class="icomoon icon-phone"></i>
+          <span>0456.456.5456(C.Hoa)</span>
+          </div>
+          <div class="col-md-4 col-xs-12 lastComponent">
+          <i class="fa fa-envelope"></i>
+          <span>fbgcaigido@gmail.com</span>
+          </div>
+        </div>
+        <div class="privacy">
+           <p> © Copyright FBG | Privacy Policy</p>
+        </div>
+      </footer>
+    </div>
+     
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
